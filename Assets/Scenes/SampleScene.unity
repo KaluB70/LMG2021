@@ -1958,7 +1958,7 @@ GameObject:
   - component: {fileID: 647055623}
   - component: {fileID: 647055622}
   - component: {fileID: 647055625}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7246,7 +7246,7 @@ MonoBehaviour:
   controller: {fileID: 7620378674613651616}
   speed: 20
   gravity: -40
-  jumpHeight: 6
+  jumpHeight: 5
   groundCheck: {fileID: 7620378675108756906}
   groundDistance: 0.3
   groundMask:
@@ -7581,7 +7581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c02906e0f3a0164e9268578e8f079a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 600
+  mouseSensitivity: 400
   debugHitPointTransform: {fileID: 0}
   playerBody: {fileID: 7620378674613651617}
 --- !u!1 &7620378675584028335
