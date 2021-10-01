@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TargetScript : MonoBehaviour
 {
-    //anna tämä skirpti vihollisille ja tuhottaville esineille
+    //anna tama skirpti vihollisille ja tuhottaville esineille
     public float health = 50f;
 
     public void TakeDamage (float amount)

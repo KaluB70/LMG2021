@@ -37,16 +37,16 @@ public class WeaponScript : MonoBehaviour
             TargetScript target = hit.transform.GetComponent<TargetScript>();
             if (target != null)
             {
-                target.TakeDamage(damage); //tehdään vahinkoa osuttuun kohteeseen
+                target.TakeDamage(damage); //tehdaan vahinkoa osuttuun kohteeseen
             }
 
             if (hit.rigidbody != null)
             {
-                hit.rigidbody.AddForce(-hit.normal * impactForce); //jos kohteella on rigidbody, lisätään osumaan myös voimaa
+                hit.rigidbody.AddForce(-hit.normal * impactForce); //jos kohteella on rigidbody, lisataan osumaan myos voimaa
             }
 
             GameObject ImpactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal)); //impact effekti osuttuun kohtaan 
-            Destroy(ImpactGO, 1f); //poistetaan impact effekti jottei peli täyty niillä
+            Destroy(ImpactGO, 1f); //poistetaan impact effekti jottei peli tayty niilla
         }
     }
 }
