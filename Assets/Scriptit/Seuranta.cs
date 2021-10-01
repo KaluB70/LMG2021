@@ -6,17 +6,17 @@ public class Seuranta : MonoBehaviour
     
 {
     public Transform kohde;
-    Vector3 etäisyys;
+    Vector3 etaisyys;
 
     // Start is called before the first frame update
     void Start()
     {
-        etäisyys = transform.position - kohde.position;
+        etaisyys = transform.position - kohde.position;
     }
 
     void LateUpdate ()
     {
-        transform.position = kohde.position + etäisyys;
+        transform.position = kohde.position + etaisyys;
     }
 
 }

@@ -8,9 +8,9 @@ public class Ohjaus : MonoBehaviour
 
     Rigidbody rb;
     public float liikkumisNopeus = 2.5f;
-    public float k‰‰ntymisNopeus = 200f;
-    public Transform yl‰osa;
-    public LayerMask s‰teenVaikutus;
+    public float kaantymisNopeus = 200f;
+    public Transform ylaosa;
+    public LayerMask sateenVaikutus;
 
     // Start is called before the first frame update
     void Start()
@@ -21,23 +21,23 @@ public class Ohjaus : MonoBehaviour
     private void FixedUpdate()
     {
         float pystysuora = Input.GetAxisRaw("Vertical");
-        Vector3 siirtym‰ = transform.forward * pystysuora * liikkumisNopeus * Time.deltaTime;
-        rb.MovePosition(transform.position + siirtym‰);
+        Vector3 siirtyma = transform.forward * pystysuora * liikkumisNopeus * Time.deltaTime;
+        rb.MovePosition(transform.position + siirtyma);
 
         float vaakasuora = Input.GetAxisRaw("Horizontal");
-        Quaternion k‰‰ntym‰ = Quaternion.Euler(0, vaakasuora * k‰‰ntymisNopeus * Time.deltaTime, 0);
-        rb.MoveRotation(rb.rotation * k‰‰ntym‰);
+        Quaternion kaantyma = Quaternion.Euler(0, vaakasuora * kaantymisNopeus * Time.deltaTime, 0);
+        rb.MoveRotation(rb.rotation * kaantyma);
     }
     // Update is called once per frame
     void Update()
     {
-        Ray s‰de = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray sade = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit osuma;
-        if (Physics.Raycast(s‰de, out osuma, 100, s‰teenVaikutus))
+        if (Physics.Raycast(sade, out osuma, 100, sateenVaikutus))
         {
             Vector3 katsomissuunta = osuma.point - transform.position;
             katsomissuunta.y = 0;
-            yl‰osa.rotation = Quaternion.LookRotation(katsomissuunta);
+            ylaosa.rotation = Quaternion.LookRotation(katsomissuunta);
         }
     }   
 }
