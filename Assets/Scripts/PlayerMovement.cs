@@ -21,9 +21,9 @@ using UnityEngine;
 
         public CharacterController controller;
 
-        public float characterSpeed = 10;
-        public float gravity = -9.81f;  //vaihdan editorissa pelaajan painovoimaksi -40 saadakseni hyppaamisesta nopean tuntuista
-        public float jumpHeight = 5f;
+        public float characterSpeed = 8;
+        public float gravity = -30f;  //vaihdan editorissa pelaajan painovoimaksi -40 saadakseni hyppaamisesta nopean tuntuista
+        public float jumpHeight = 4f;
 
         public Transform groundCheck;
         public float groundDistance = 0.4f;
