@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyDeath : DeathScript
 {
     ParticleSystem deathEffect;
+    public int killAmount;
 
     void Start()
     {
@@ -12,6 +13,7 @@ public class EnemyDeath : DeathScript
     }
     protected override void Die()
     {
+        KillCounterScript.instance.AddKills(killAmount);
         deathEffect.transform.SetParent(null);
         deathEffect.Play();
         Destroy(gameObject);
