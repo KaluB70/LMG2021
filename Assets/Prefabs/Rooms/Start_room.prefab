@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 405939405413567276}
   - component: {fileID: 405939405413567277}
   - component: {fileID: 405939405413567314}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 405939405589196162}
   - component: {fileID: 405939405589196163}
   - component: {fileID: 405939405589196160}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1407,7 +1407,7 @@ GameObject:
   - component: {fileID: 405939407129922121}
   - component: {fileID: 405939407129922126}
   - component: {fileID: 405939407129922127}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tila
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2693,6 +2693,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2005055251}
     m_Modifications:
+    - target: {fileID: 538530832, guid: 15d73bf837f5c1142ba9241d1fd7cdc5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 538530833, guid: 15d73bf837f5c1142ba9241d1fd7cdc5, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -2792,6 +2796,14 @@ PrefabInstance:
     - target: {fileID: 3439791588062922575, guid: 15d73bf837f5c1142ba9241d1fd7cdc5, type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443437425303616364, guid: 15d73bf837f5c1142ba9241d1fd7cdc5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443437425303616364, guid: 15d73bf837f5c1142ba9241d1fd7cdc5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -53.31
       objectReference: {fileID: 0}
     - target: {fileID: 3489245342612992512, guid: 15d73bf837f5c1142ba9241d1fd7cdc5, type: 3}
       propertyPath: m_Mesh
@@ -3432,6 +3444,10 @@ PrefabInstance:
     - target: {fileID: 1378172779303584491, guid: fd2de4bd876f4ac4980370e624362931, type: 3}
       propertyPath: m_Name
       value: Ground_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378172779303584491, guid: fd2de4bd876f4ac4980370e624362931, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1378172779303584491, guid: fd2de4bd876f4ac4980370e624362931, type: 3}
       propertyPath: m_StaticEditorFlags

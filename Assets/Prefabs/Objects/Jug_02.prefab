@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5225302337017404633}
   - component: {fileID: 4677503284638141495}
   - component: {fileID: 6007697817589097379}
-  - component: {fileID: 1497153180082994431}
   - component: {fileID: 1808690400441577905}
+  - component: {fileID: 3174731183528418294}
   m_Layer: 0
   m_Name: Jug_02
   m_TagString: Untagged
@@ -98,19 +98,6 @@ CapsuleCollider:
   m_Height: 0.49802148
   m_Direction: 1
   m_Center: {x: 0, y: 0.24901074, z: 0}
---- !u!114 &1497153180082994431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6698533136370866307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5634cc229df5e884f80c83b470f83b24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 50
 --- !u!54 &1808690400441577905
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -127,3 +114,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3174731183528418294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698533136370866307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d91998bbba721ad4ab4412bb22bd7599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitpoints: 50
