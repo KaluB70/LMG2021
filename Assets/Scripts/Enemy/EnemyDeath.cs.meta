@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: ae87c3f577ac3ec4194beeca37e62c65
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - dmgPopup: {fileID: 3773509494665008340, guid: 5c7b6fa4b5f04224ca491c0821161405, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
